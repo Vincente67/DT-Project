@@ -9,9 +9,22 @@ def calculate_resistor():
       
         # Validation 
         if supply_voltage <= 0 or led_voltage <= 0 or current <=0:
-        print(values must be greater than 0")
-        return 
+            print(values must be greater than 0")
+            return 
 
         if led_voltage >= supply_voltage:
-        print ("LED Voltage must be less than supply voltage")
-        return 
+            print ("LED Voltage must be less than supply voltage")
+            return 
+
+        # Calculation (Ohm's law)
+        resistance = (supply_voltage - led_voltage) / current
+
+        # Output 
+        print(f"Required resitor: {round(resistance, 2)} ohms")
+        
+      expect ValueError:
+        print("ivalid input. Please enter numbers only.") 
+
+    # Run the program 
+ caculate_resistor() 
+
