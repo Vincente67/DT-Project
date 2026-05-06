@@ -22,9 +22,9 @@ def calculate_resistor():
         # Output 
         print(f"Required resistor: {round(resistance, 2)} ohms")
         
-  except ValueError:
+    except ValueError:
         print("invalid input. Please enter numbers only.") 
 
 # Run the program 
- calculate_resistor() 
+calculate_resistor() 
 
