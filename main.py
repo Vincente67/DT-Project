@@ -4,12 +4,12 @@ def calculate_resistor():
     try:
         # Input 
         supply_voltage = float(input(" Enter supply voltage (V): "))
-        led_voltage = float(input("Enter LED foward voltage (V): "))
+        led_voltage = float(input("Enter LED forward voltage (V): "))
         current = float(input("Enter current (A): "))
       
         # Validation 
         if supply_voltage <= 0 or led_voltage <= 0 or current <=0:
-            print(values must be greater than 0")
+            print("values must be greater than 0")
             return 
 
         if led_voltage >= supply_voltage:
@@ -20,11 +20,11 @@ def calculate_resistor():
         resistance = (supply_voltage - led_voltage) / current
 
         # Output 
-        print(f"Required resitor: {round(resistance, 2)} ohms")
+        print(f"Required resistor: {round(resistance, 2)} ohms")
         
-      expect ValueError:
-        print("ivalid input. Please enter numbers only.") 
+  except ValueError:
+        print("invalid input. Please enter numbers only.") 
 
     # Run the program 
- caculate_resistor() 
+ calculate_resistor() 
 
