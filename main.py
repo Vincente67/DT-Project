@@ -25,6 +25,6 @@ def calculate_resistor():
   except ValueError:
         print("invalid input. Please enter numbers only.") 
 
-    # Run the program 
+# Run the program 
  calculate_resistor() 
 
