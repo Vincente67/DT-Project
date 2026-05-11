@@ -2,7 +2,7 @@ def calculate_resistor():
     print ("LED Resistor Calculator")
     
 # Keeps repeating until the user enters valid values
-while true:
+while True:
     try:
         # Input 
         supply_voltage = float(input(" Enter supply voltage (V): "))
@@ -12,11 +12,11 @@ while true:
         # Validation 
         if supply_voltage <= 0 or led_voltage <= 0 or current <=0:
             print("values must be greater than 0")
-            return 
+             
 
         if led_voltage >= supply_voltage:
             print ("LED Voltage must be less than supply voltage")
-            return 
+            
 
         # Calculation (Ohm's law)
         resistance = (supply_voltage - led_voltage) / current
