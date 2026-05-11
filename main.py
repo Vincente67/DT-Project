@@ -72,10 +72,7 @@ def calculate_resistor():
             print("Correct! Resistance is measured in ohms")
         else:
             print("Incorrect. The correct answer is C. Ohms")
-
-    
-    except ValueError:
-        print("invalid input. Please enter numbers only.") 
+            
 
 # Run the program 
 calculate_resistor() 
