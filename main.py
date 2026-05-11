@@ -20,9 +20,27 @@ def calculate_resistor():
         resistance = (supply_voltage - led_voltage) / current
 
         # Output 
-        print(f"Required resistor: {round(resistance, 2)} ohms")
+        print(f"\nRequired resistor: {round(resistance, 2)} ohms")
+
+    #------------------- Quiz selection --------------------------
         
-    except ValueError:
+
+        print("\n --- Ohm's law quiz ---")
+        print("What is the formula for Ohm's law?")
+        print("A. V = I x R")
+        print("B. V = I + R")
+        print("B. V = I + R") 
+        print("B. V = I ÷ R")
+
+        answer = input("Enter A, B, or C: ").lower()
+
+        if answer == "a":
+            print("Correct! Ohm's law is V = I x R")
+        else:
+            print("Incorrect. The correct answer was V = I x R")
+
+    
+   except ValueError:
         print("invalid input. Please enter numbers only.") 
 
 # Run the program 
