@@ -41,7 +41,7 @@ def calculate_resistor():
 
     #------------------- Practice Question 2 --------------------------
         print("\n--- Ohm's law quiz 2 ---")
-        print("What does 'R' stand for in Ohm's Law?)
+        print("What does 'R' stand for in Ohm's Law?")
         print("A. Resistance")
         print("B. Rotation")
         print("C. Radiation")
@@ -49,9 +49,9 @@ def calculate_resistor():
         answer2 = input("Enter A, B, or C: ").lower()
         
         if answer2 == "a":
-           print("Correct! R stands for Resistance")
-       else:
-           print ("Incorrect. The correct answer is A. Resistance")
+            print("Correct! R stands for Resistance")
+        else:
+            print ("Incorrect. The correct answer is A. Resistance")
 
            
     #------------------- Practice Question 3 --------------------------
