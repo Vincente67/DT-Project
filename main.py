@@ -1,6 +1,8 @@
 def calculate_resistor():
     print ("LED Resistor Calculator")
-
+    
+# Keeps repeating until the user enters valid values
+while true:
     try:
         # Input 
         supply_voltage = float(input(" Enter supply voltage (V): "))
@@ -18,6 +20,7 @@ def calculate_resistor():
 
         # Calculation (Ohm's law)
         resistance = (supply_voltage - led_voltage) / current
+        break # Stops loop when values are correct 
 
         # Output 
         print(f"\nRequired resistor: {round(resistance, 2)} ohms")
