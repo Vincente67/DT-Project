@@ -2,28 +2,30 @@ def calculate_resistor():
     print ("LED Resistor Calculator")
     
 # Keeps repeating until the user enters valid values
-while True:
-    try:
-        # Input 
-        supply_voltage = float(input(" Enter supply voltage (V): "))
-        led_voltage = float(input("Enter LED forward voltage (V): "))
-        current = float(input("Enter current (A): "))
-      
-        # Validation 
-        if supply_voltage <= 0 or led_voltage <= 0 or current <=0:
-            print("values must be greater than 0")
-             
+    while True:
+        try:
+            # Input
+            supply_voltage = float(input("Enter supply voltage (V): "))
+            led_voltage = float(input("Enter LED forward voltage (V): "))
+            current = float(input("Enter current (A): "))
 
-        if led_voltage >= supply_voltage:
-            print ("LED Voltage must be less than supply voltage")
+            # Validation
+            if supply_voltage <= 0 or led_voltage <= 0 or current <= 0:
+                print("Values must be greater than 0. Try again.\n")
+
+            elif led_voltage >= supply_voltage:
+                print("LED voltage must be less than supply voltage. Try again.\n")
             
+            else:
+                # Calculation (Ohm's law)
+                resistance = (supply_voltage - led_voltage) / current 
 
-        # Calculation (Ohm's law)
-        resistance = (supply_voltage - led_voltage) / current
-        break # Stops loop when values are correct 
-
-        # Output 
-        print(f"\nRequired resistor: {round(resistance, 2)} ohms")
+                # Output 
+                print(f"\nRequired resistor: {round(resistance, 2)} ohms")
+                break # Stops loop when values are correct
+               
+        except ValueError:
+            print("Invalid input. Please enter numbers only.\n")
         
 
     #-------------------Practice Question 1 --------------------------
@@ -40,6 +42,7 @@ while True:
             print("Correct! Ohm's law is V = I x R")
         else:
             print("Incorrect. The correct answer was V = I x R")
+
 
 
     #------------------- Practice Question 2 --------------------------
