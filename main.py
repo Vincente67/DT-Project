@@ -46,8 +46,9 @@ def calculate_resistor():
         print("B. Rotation")
         print("C. Radiation")
             
-       answer2 = input("Enter A, B, or C: ").lower()
-       if answer2 == "a":
+        answer2 = input("Enter A, B, or C: ").lower()
+        
+        if answer2 == "a":
            print("Correct! R stands for Resistance")
        else:
            print ("Incorrect. The correct answer is A. Resistance")
@@ -61,7 +62,7 @@ def calculate_resistor():
         print("C. Ohms")
 
         answer3 = input("Enter A, B, or C: ").lower()
-        if answer3 == "c"
+        if answer3 == "c":
             print("Correct! Resistance is measured in ohms")
         else:
             print("Incorrect. The correct answer is C. Ohms")
@@ -72,4 +73,3 @@ def calculate_resistor():
 
 # Run the program 
 calculate_resistor() 
-
