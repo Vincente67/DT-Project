@@ -33,8 +33,7 @@ def calculate_resistor():
     print("What is the formula for Ohm's Law?")
     print("A. V = I x R")
     print("B. V = I + R")
-    print("B. V = I + R") 
-    print("B. V = I ÷ R")
+    print("C. V = I ÷ R")
 
     answer = input("Enter A, B, or C: ").lower()
 
